@@ -1,0 +1,39 @@
+/* Weekmenu.css */
+
+.Weekmenu-container {
+    text-align: center;
+    padding: 20px;
+    background-color: pink;
+  }
+  
+  .subheading {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .meal-images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+  }
+  
+  .meal-item {
+    margin: 10px;
+    width: calc(25% - 20px); /* Adjust the width based on your preference */
+    box-sizing: border-box;
+  }
+  
+  .meal-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .meal-description {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+  }
+  

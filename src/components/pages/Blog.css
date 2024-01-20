@@ -1,0 +1,42 @@
+/* BlogPage.css */
+
+.blog-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+  
+  .blog-item {
+    position: relative;
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .blog-text {
+    padding: 15px;
+  }
+  
+  h3 {
+    color: #333;
+  }
+  
+  p {
+    margin: 10px 0;
+  }
+  
+  a {
+    color: #007BFF;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  

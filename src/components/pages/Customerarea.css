@@ -1,0 +1,77 @@
+/* CustomerAreaPage.css */
+
+.customer-area-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: pink;
+    padding: 60px;
+  }
+  
+  .box {
+    max-width: 300px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2, h3 {
+    color: #333;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color:orange;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .action-button {
+    background-color: #D62D7E;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .action-button:hover {
+    background-color: #D62D7E; /* Darker shade on hover */
+
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  a {
+    color: #007BFF; /* Link color */
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    color: #0056b3; /* Link color on hover */
+  }
+  

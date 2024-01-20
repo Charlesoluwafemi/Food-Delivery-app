@@ -1,0 +1,36 @@
+/* Discoverybox.css */
+
+.Discoverybox-container {
+    text-align: center;
+    padding: 120px;
+    background-color: pink;
+  }
+  
+  .Discoverybox-heading {
+    font-size: 34px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    
+  
+  }
+  
+  .Discoverybox-subheading {
+    font-size: 18px;
+    margin-bottom: 30px;
+  
+  }
+  
+  .Discoverybox-text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+  
+  }
+
+  .Discoverybox-heading1 {
+
+    font-size: 34px;
+    margin-top: 30px;
+
+  }
+  

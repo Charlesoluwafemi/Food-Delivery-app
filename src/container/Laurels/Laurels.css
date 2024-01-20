@@ -1,0 +1,76 @@
+/* Laurels.css */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 0; /* Adjust vertical padding as needed, set horizontal padding to 0 */
+  background-color: grey;
+}
+
+.subheading {
+  width: 100%;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.laurel-item {
+  flex: 0 0 calc(30% - 20px); /* Adjust width and margin as needed */
+  margin: 0 10px 20px; /* Adjust the margin as needed, added bottom margin */
+}
+
+.laurels-image {
+  width: 100%; /* Make sure the image spans the container width */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000; /* Adjust the color as needed */
+  margin-bottom: 10px; /* Adjust margin as needed */
+  text-align: center; /* Center the title */
+}
+
+.description {
+  font-size: 16px;
+  color: black;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.order-button {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  display: block; /* Ensure the button is on a new line */
+  margin: 0 auto; /* Center the button */
+}
+
+.order-button:hover {
+  background-color: #45a049; /* Darker green on hover, adjust as needed */
+}
+
+
+/* Example responsive styles */
+@media screen and (max-width: 768px) {
+  /* Styles for screens up to 768 pixels wide */
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Styles for screens up to 480 pixels wide */
+  body {
+    font-size: 12px;
+  }
+}
+

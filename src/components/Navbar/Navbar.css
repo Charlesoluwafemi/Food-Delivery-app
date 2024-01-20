@@ -1,0 +1,200 @@
+
+/* Add any other styles you need for the mobile menu */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+.app__navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-pink);
+    padding: 1rem 2rem;
+}
+
+/* Navbar.css */
+.app__navbar-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Add more styling as needed */
+  
+
+.app__navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.app__navbar-logo img {
+    width: 150px;
+}
+
+.app__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.app__navbar-links a {
+    text-decoration: none;
+    color: black; /* Set the text color to black for regular menu items */
+}
+
+.app__navbar-links li {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.app__navbar-links li:hover {
+    color: var(--color-grey);
+}
+
+.app__navbar-login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.app__navbar-login a {
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: 0.5s ease;
+    color: black; /* Set the text color to black for login/register and place order links */
+}
+
+.app__navbar-login a:hover {
+    border-bottom: 1px solid var(--color-golden);
+}
+
+/* Add margin to create space between login/register links and "Place Order" button */
+.app__navbar-login .place-order-button {
+    margin-right: 1rem;
+}
+
+/* Style for the hypothetical "Place Order" button */
+.app__navbar-login .place-order-button {
+    background-color: var(--color-golden);
+    color: var(--color-black);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.app__navbar-login .place-order-button:hover {
+    background-color: var(--color-golden-hover);
+}
+
+.app__navbar-login div {
+    width: 1px;
+    height: 30px;
+    background-color: var(--color-grey);
+}
+
+
+
+.hamburger-icon {
+    display: none; /* Hide by default on larger screens */
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Show the links in a vertical list on smaller screens */
+ 
+  .app__navbar-links.open {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #fff; /* Adjust background color as needed */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Navbar.css */
+
+/* ... (existing styles) */
+
+/* Mobile menu styles */
+/* Navbar.css */
+
+/* ... (existing styles) */
+
+/* Mobile menu styles */
+/* Navbar.css */
+
+/* ... (existing styles) */
+
+/* Mobile menu styles */
+.app__navbar-links-mobile {
+    font-family: 'Poppins', sans-serif; /* Set the font for the mobile menu */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align items to the right side */
+    background-color: var(--color-grey); /* Change to your desired background color */
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 70%; /* Adjust the width as needed */
+    max-width: 300px; /* Set a maximum width if needed */
+    padding: 2rem;
+    z-index: 1;
+    transform: translateX(100%); /* Initially move off-screen */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .app__navbar-links-mobile.open {
+    transform: translateX(0); /* Move on-screen when menu is open */
+  }
+  
+  .app__navbar-links-mobile a {
+    text-decoration: none;
+    color: white; /* Set text color */
+    font-size: 18px; /* Adjust font size */
+    margin-bottom: 1rem; /* Adjust spacing between menu items */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .app__navbar-links-mobile a:hover {
+    color: var(--color-grey); /* Set text color on hover */
+  }
+  
+  .hamburger-icon {
+    display: none; /* Hide the hamburger icon on larger screens */
+  }
+  
+  
+  /* Add any other styles you need for the mobile menu */
+  
+  .app__navbar-links-mobile.right-side {
+    right: 0;
+  }
+  
+  
+  /* Add any other styles you need for the mobile menu */
+  
+  
+  /* Show the hamburger icon on smaller screens */
+  @media screen and (max-width: 768px) {
+    .hamburger-icon {
+      display: block;
+    }
+  
+    .app__navbar-links {
+      display: none; /* Hide by default on smaller screens */
+    }
+  }
+  
