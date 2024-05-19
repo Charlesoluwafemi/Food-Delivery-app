@@ -1,200 +1,129 @@
+/* Base styles */
+/* Your existing base styles here */
 
-/* Add any other styles you need for the mobile menu */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
-
-.app__navbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: var(--color-pink);
-    padding: 1rem 2rem;
-}
-
-/* Navbar.css */
+/* Navbar */
 .app__navbar-content {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Add more styling as needed */
-  
+  display: flex;
+  justify-content: space-between; /* Ensure items are evenly spaced */
+  align-items: center;
+  width: 100%;
+}
 
 .app__navbar-logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.app__navbar-logo img {
-    width: 150px;
+  margin-right: auto; /* Push the logo to the left */
 }
 
 .app__navbar-links {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-}
-
-.app__navbar-links a {
-    text-decoration: none;
-    color: black; /* Set the text color to black for regular menu items */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the links horizontally */
+  flex-grow: 1; /* Allow the links to grow and take available space */
 }
 
 .app__navbar-links li {
-    margin: 0 1rem;
-    cursor: pointer;
+  margin: 0 1rem;
+  cursor: pointer;
 }
 
-.app__navbar-links li:hover {
-    color: var(--color-grey);
+/* Change color, font weight, and font family of page names */
+.app__navbar-links a {
+  text-decoration: none;
+  color: #000000; /* Set the color of page names to black */
+  font-weight: bold; /* Make the font bold */
+  font-family: 'Roboto', sans-serif;
 }
-
-.app__navbar-login {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.app__navbar-login a {
-    margin: 0 1rem;
-    text-decoration: none;
-    transition: 0.5s ease;
-    color: black; /* Set the text color to black for login/register and place order links */
-}
-
-.app__navbar-login a:hover {
-    border-bottom: 1px solid var(--color-golden);
-}
-
-/* Add margin to create space between login/register links and "Place Order" button */
-.app__navbar-login .place-order-button {
-    margin-right: 1rem;
-}
-
-/* Style for the hypothetical "Place Order" button */
-.app__navbar-login .place-order-button {
-    background-color: var(--color-golden);
-    color: var(--color-black);
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.app__navbar-login .place-order-button:hover {
-    background-color: var(--color-golden-hover);
-}
-
-.app__navbar-login div {
-    width: 1px;
-    height: 30px;
-    background-color: var(--color-grey);
-}
-
-
-
-.hamburger-icon {
-    display: none; /* Hide by default on larger screens */
-    cursor: pointer;
-  }
-  
-  .bar {
-    height: 3px;
-    width: 25px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-  
-  /* Show the links in a vertical list on smaller screens */
- 
-  .app__navbar-links.open {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    background-color: #fff; /* Adjust background color as needed */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  }
-
-  /* Navbar.css */
-
-/* ... (existing styles) */
-
-/* Mobile menu styles */
-/* Navbar.css */
-
-/* ... (existing styles) */
-
-/* Mobile menu styles */
-/* Navbar.css */
-
-/* ... (existing styles) */
 
 /* Mobile menu styles */
 .app__navbar-links-mobile {
-    font-family: 'Poppins', sans-serif; /* Set the font for the mobile menu */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; /* Align items to the right side */
-    background-color: var(--color-grey); /* Change to your desired background color */
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 70%; /* Adjust the width as needed */
-    max-width: 300px; /* Set a maximum width if needed */
-    padding: 2rem;
-    z-index: 1;
-    transform: translateX(100%); /* Initially move off-screen */
-    transition: transform 0.3s ease-in-out;
+  font-family: 'Roboto', sans-serif;
+  display: none; /* Hide mobile menu links by default */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-grey);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 70%;
+  max-width: 300px;
+  padding: 2rem;
+  z-index: 1;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.app__navbar-links-mobile.open {
+  transform: translateX(0);
+}
+
+.app__navbar-links-mobile a {
+  text-decoration: none;
+  color: #000000; /* Set the color of page names to black */
+  font-weight: bold; /* Make the font bold */
+  font-family: 'Poppins', sans-serif; /* Apply the Poppins font */
+  font-size: 18px;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Show the button on smaller screens */
+.mobile-menu-button {
+  background-color: #D62D7E;
+  border: none;
+  cursor: pointer;
+  margin-left: auto; /* Position the button on the right */
+  margin-right: 1rem; /* Add some right margin for spacing */
+  display: none; /* Initially hide the button */
+}
+
+/* Ensure the button is visible on smaller screens */
+@media screen and (max-width: 768px) {
+  .app__navbar-links {
+    display: none; /* Hide page names on small screens */
   }
-  
-  .app__navbar-links-mobile.open {
-    transform: translateX(0); /* Move on-screen when menu is open */
+
+  .app__navbar-links-mobile {
+    display: flex; /* Show mobile menu links on small screens */
   }
-  
-  .app__navbar-links-mobile a {
-    text-decoration: none;
-    color: white; /* Set text color */
-    font-size: 18px; /* Adjust font size */
-    margin-bottom: 1rem; /* Adjust spacing between menu items */
-    transition: color 0.3s ease-in-out;
+
+  .mobile-menu-button {
+    display: block; /* Ensure the mobile menu button is visible */
   }
-  
-  .app__navbar-links-mobile a:hover {
-    color: var(--color-grey); /* Set text color on hover */
+}
+
+/* Ensure the button is hidden on larger screens */
+@media screen and (min-width: 769px) {
+  .mobile-menu-button {
+    display: none;
   }
-  
-  .hamburger-icon {
-    display: none; /* Hide the hamburger icon on larger screens */
+
+  .app__navbar-links {
+    display: flex; /* Show page names on larger screens */
+    justify-content: center; /* Center the links */
   }
-  
-  
-  /* Add any other styles you need for the mobile menu */
-  
-  .app__navbar-links-mobile.right-side {
-    right: 0;
-  }
-  
-  
-  /* Add any other styles you need for the mobile menu */
-  
-  
-  /* Show the hamburger icon on smaller screens */
-  @media screen and (max-width: 768px) {
-    .hamburger-icon {
-      display: block;
-    }
-  
-    .app__navbar-links {
-      display: none; /* Hide by default on smaller screens */
-    }
-  }
-  
+}
+
+.i-icon {
+  margin-left: 40px;
+  width: 34px; /* Adjust size as needed */
+  height: 34px;
+  margin-left: 50px;
+  color: #D62D7E;
+}
+
+/* Styling for user profile and icon */
+.userprofile[href="#profile"] svg {
+  fill: #D62D7E; /* Change the color to #D62D7E */
+  width: 24px; /* Adjust size for better fit */
+  height: 24px; /* Adjust size for better fit */
+  margin-left: 30px;
+}
+
+
+
+

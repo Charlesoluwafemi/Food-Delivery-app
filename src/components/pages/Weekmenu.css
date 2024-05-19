@@ -1,39 +1,61 @@
 /* Weekmenu.css */
 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
 .Weekmenu-container {
-    text-align: center;
-    padding: 20px;
-    background-color: pink;
-  }
-  
-  .subheading {
-    font-size: 24px;
-    margin-bottom: 40px;
-  }
-  
-  .meal-images-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
-  }
-  
+  text-align: center;
+  padding: 20px;
+  background-color: pink;
+  box-sizing: border-box;
+}
+
+.subheading {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.meal-images-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px; /* Add gap to ensure space between items */
+  box-sizing: border-box;
+}
+
+.meal-item {
+  margin: 10px;
+  width: calc(25% - 20px); /* Adjust the width based on your preference */
+  box-sizing: border-box;
+}
+
+.meal-image {
+  max-width: 100%; /* Ensure the image fits within its container */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.meal-description {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
   .meal-item {
-    margin: 10px;
-    width: calc(25% - 20px); /* Adjust the width based on your preference */
-    box-sizing: border-box;
+    width: calc(50% - 20px); /* Two items per row */
   }
-  
-  .meal-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 480px) {
+  .meal-item {
+    width: calc(100% - 20px); /* One item per row */
   }
-  
-  .meal-description {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #555;
-  }
-  
+}

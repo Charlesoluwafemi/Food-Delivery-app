@@ -4,10 +4,11 @@ import React, { useState } from 'react';
 import './LoginRegister.css'; // Import your CSS file
 
 const LoginRegister = () => {
+  // If you don't need these variables, you can remove them
   const [loginEmail, setLoginEmail] = useState('');
   const [loginPassword, setLoginPassword] = useState('');
-
   const [registerFirstName, setRegisterFirstName] = useState('');
+  
   // ... (other register state variables)
 
   const handleLoginSubmit = (e) => {

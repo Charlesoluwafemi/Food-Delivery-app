@@ -1,33 +1,93 @@
-.app__header {
-    background-color: var(--color-grey);
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Updated to have space between items */
+.header {
+  background-color: #f8f9fa; /* Light background color */
+  padding: 20px; /* Reduced padding around the header for smaller screens */
+}
+
+/* Main heading styles */
+.header h1 {
+  font-family: 'Roboto', sans-serif; /* Use the Roboto font */
+  font-size: 2rem; /* Decreased font size for the main heading on smaller screens */
+  margin-bottom: 5px; /* Reduced margin for smaller screens */
+  color: #343a40; /* Dark text color */
+  text-align: center; /* Center align text on smaller screens */
+}
+
+/* Subtitle styles */
+.subtitle {
+  font-family: 'Montserrat', sans-serif; /* Use the Montserrat font */
+  font-size: 1rem; /* Decreased font size for subtitle on smaller screens */
+  color: #666; /* Slightly darker text color */
+  text-align: center; /* Center align text on smaller screens */
+}
+
+/* Features section styles */
+.features {
+  margin: 20px 0;
+  font-family: 'Montserrat', sans-serif; /* Use the Montserrat font */
+  font-size: 1rem; /* Adjusted font size for features on smaller screens */
+  color: #444; /* Darker text color */
+  text-align: center; /* Center align text on smaller screens */
+}
+
+/* Configure link styles */
+.configure-link {
+  display: block; /* Change to block element for full width */
+  margin: 20px auto; /* Center link horizontally with some margin */
+  padding: 10px 20px;
+  color: #fff; /* White text color */
+  text-align: center; /* Center align text */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #D62D7E; /* Background color */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+/* Chef recommendation styles */
+.chef-recommendation {
+  margin: 0 auto; /* Center the chef recommendation */
+  max-width: 50px; /* Limit width for better readability on smaller screens */
+  align-items: center;
+  margin-left: 10px;
+  width: 10px;
+}
+
+/* Payment methods container styles */
+.payment-methods {
+  margin-top: 20px; /* Adjust spacing */
+}
+
+/* Individual image styles */
+.payment-methods img {
+  width: 80px; /* Decrease size of payment method images for smaller screens */
+  margin-right: 10px; /* Adjust spacing */
+}
+
+/* Homepage image styles */
+/* Homepage image styles */
+/* Homepage image styles */
+/* Homepage image styles */
+/* Homepage image styles */
+
+/* Homepage image container styles */
+.homepage-image-container {
+  display: flex; /* Use flexbox */
+  justify-content: flex-end; /* Align items to the end of the container */
+}
+
+/* Homepage image styles */
+.homepage-image {
+  width: 100%; /* Make image responsive to screen width */
+  max-width: 100%; /* Ensure the image does not exceed its container's width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Scale the image to fit within its container while preserving its aspect ratio */
+}
+
+
+
+/* Example responsive styles */
+@media screen and (max-width: 768px) {
+  /* Styles for screens up to 768 pixels wide */
+  .header h1 {
+    font-size: 1.5rem; /* Decrease font size for the main heading */
   }
-  
-  .app__header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    height: 100%;
-    padding-left: 2rem; /* Adjust padding as needed */
-  }
-  
-  .app__header-h1 {
-    font-family: var(--font-base);
-    color: var(--color-golden);
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    line-height: 117px;
-    font-size: 90px;
-  }
-  
-  /* Header.css */
-.app__header-img img {
-    width: 100%; /* Use 100% to make the image fill its container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove any extra spacing caused by default inline display */
-    margin: 0; /* Remove margin to eliminate space on the right side */
-  }
-  
+}

@@ -1,3 +1,5 @@
+
+
 // assets.js
 import bg from '../assets/bg.png';
 import chef from '../assets/chef.png';
@@ -52,6 +54,13 @@ import Article2 from '../assets/Article2.png';
 import Article3 from '../assets/Article3.png';
 import Article4 from '../assets/Article4.png';
 
+import BanContact from '../assets/BanContact.png';
+import Chef1 from '../assets/Chef1.png';
+import configure from '../assets/configure.png';
+import Edened from '../assets/Edened.png';
+import Paypal from '../assets/Paypal.png';
+import ICBC from '../assets/ICBC.png';
+
 
 
 const images = {
@@ -105,6 +114,12 @@ const images = {
   Article2,
   Article3,
   Article4,
+  Chef1,
+  Edened,
+  ICBC,
+  Paypal,
+  configure,
+  BanContact,
 };
 
 export default images;

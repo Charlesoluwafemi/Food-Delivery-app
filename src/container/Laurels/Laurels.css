@@ -3,8 +3,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center; /* Align items vertically in the center */
   text-align: center;
-  padding: 40px 0; /* Adjust vertical padding as needed, set horizontal padding to 0 */
+  padding: 40px 10px; /* Adjust vertical padding as needed, set horizontal padding to 10px */
   background-color: grey;
 }
 
@@ -59,18 +60,27 @@
 }
 
 
-/* Example responsive styles */
+/* Responsive styles */
 @media screen and (max-width: 768px) {
   /* Styles for screens up to 768 pixels wide */
-  body {
-    font-size: 14px;
+  .container {
+    padding: 40px 20px; /* Adjust horizontal padding */
+  }
+  
+  .laurel-item {
+    flex: 0 0 calc(50% - 20px); /* Adjust width for two items per row */
   }
 }
 
 @media screen and (max-width: 480px) {
   /* Styles for screens up to 480 pixels wide */
-  body {
-    font-size: 12px;
+  .container {
+    padding: 40px 10px; /* Adjust horizontal padding */
+  }
+  
+  .laurel-item {
+    flex: 0 0 calc(100% - 20px); /* Adjust width for one item per row */
   }
 }
+
 
