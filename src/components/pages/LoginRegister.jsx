@@ -1,15 +1,16 @@
-// LoginRegister.jsx
-
 import React, { useState } from 'react';
 import './LoginRegister.css'; // Import your CSS file
 
 const LoginRegister = () => {
-  // If you don't need these variables, you can remove them
+  // State for login
   const [loginEmail, setLoginEmail] = useState('');
   const [loginPassword, setLoginPassword] = useState('');
+
+  // State for registration
   const [registerFirstName, setRegisterFirstName] = useState('');
-  
-  // ... (other register state variables)
+  const [registerLastName, setRegisterLastName] = useState('');
+  const [registerEmail, setRegisterEmail] = useState('');
+  const [registerPassword, setRegisterPassword] = useState('');
 
   const handleLoginSubmit = (e) => {
     e.preventDefault();
@@ -20,7 +21,7 @@ const LoginRegister = () => {
   const handleRegisterSubmit = (e) => {
     e.preventDefault();
     // Add your register logic here
-    console.log('Register submitted:', registerFirstName, /* ... other register values */);
+    console.log('Register submitted:', registerFirstName, registerLastName, registerEmail, registerPassword);
   };
 
   return (
@@ -28,7 +29,20 @@ const LoginRegister = () => {
       <div id="login" className="login-register-box">
         <h2>Login</h2>
         <form onSubmit={handleLoginSubmit}>
-          {/* ... (login form fields) */}
+          <input
+            type="email"
+            placeholder="Email"
+            value={loginEmail}
+            onChange={(e) => setLoginEmail(e.target.value)}
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={loginPassword}
+            onChange={(e) => setLoginPassword(e.target.value)}
+            required
+          />
           <button type="submit">Login</button>
         </form>
       </div>
@@ -36,7 +50,34 @@ const LoginRegister = () => {
       <div id="register" className="login-register-box">
         <h2>Register</h2>
         <form onSubmit={handleRegisterSubmit}>
-          {/* ... (register form fields) */}
+          <input
+            type="text"
+            placeholder="First Name"
+            value={registerFirstName}
+            onChange={(e) => setRegisterFirstName(e.target.value)}
+            required
+          />
+          <input
+            type="text"
+            placeholder="Last Name"
+            value={registerLastName}
+            onChange={(e) => setRegisterLastName(e.target.value)}
+            required
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            value={registerEmail}
+            onChange={(e) => setRegisterEmail(e.target.value)}
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={registerPassword}
+            onChange={(e) => setRegisterPassword(e.target.value)}
+            required
+          />
           <button type="submit">Register</button>
         </form>
       </div>
@@ -45,5 +86,6 @@ const LoginRegister = () => {
 };
 
 export default LoginRegister;
+
 
 

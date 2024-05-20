@@ -19,7 +19,7 @@ const laurelData = [
     image: images.promise3,
     alt: 'Easy delivery',
     title: 'Easy delivery',
-    description: 'At Fresheo, we send you an SMS informing you of a short time slot on the Thursday preceding your delame day.'
+    description: 'At Fresheo, we deliver on time.'
   },
 ];
 
